@@ -1,0 +1,32 @@
+.catalog{
+    &__title{
+        margin-bottom: 24px;
+        font-weight: bold;
+        @media (min-width: 832px){
+            font-size: 30px;
+            line-height: 38px;
+        }
+        @media (max-width: 832px){
+            font-size: 26px;
+            line-height: 28px;
+        }
+    }
+    &__card + &__card{
+        margin-top: 24px;
+    }
+    &__error{
+        color: #F44336;
+        font-weight: bold;
+        @media (min-width: 832px){
+            font-size: 26px;
+            line-height: 34px;
+        }
+        @media (max-width: 832px){
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+@import '../components/apartment-card';
